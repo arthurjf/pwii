@@ -1,21 +1,24 @@
+<?php
+$nomeLoja = "Loja de Vestuário";
+?>
+
 <html>
 
 <head>
     <meta charset="utf-8">
-    <title>Minha Loja</title>
+    <title><?= $nomeLoja ?></title>
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/loja.css" rel="stylesheet">
+    <link href="css/lojavestuario.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="navbar-header">
-            <a href="index.php" class="navbar-brand">Loja IFG</a>
+            <a href="index.php" class="navbar-brand"><?= $nomeLoja ?></a>
         </div>
         <div>
             <ul class="nav navbar-nav">
-                <li><a href="produtoformulario.php">Adicionar Produto</a></li>
-                <li><a href="sobre.php">Sobre</a></li>
+                <li><a href="cadastrarusuario.php">Cadastrar</a></li>
                 </lu>
         </div>
     </div>

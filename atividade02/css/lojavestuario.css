@@ -1,0 +1,27 @@
+body{
+    padding-top: 50px;
+}
+
+.principal{
+    padding: 40px 15px;
+    text-align: center;
+}
+
+.foto-banner{
+    padding: 5%;
+}
+
+.comentario{
+    background-color: #e8e8e8;
+    padding: 10px 10px;
+}
+
+.comentario-texto{
+    text-align: center;
+    font-size: medium;
+    font-style: italic;
+}
+
+.comentario-autor{
+    font-weight: bold;
+}
