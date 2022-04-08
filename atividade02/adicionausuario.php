@@ -3,8 +3,9 @@
 $nome = $_GET["nome"];
 $email = $_GET["email"];
 $senha = $_GET["senha"];
+$telefone = $_GET["telefone"];
 
-$query = "INSERT INTO usuarios (nome, email, senha) VALUES ('{$nome}', '{$email}', '{$senha}')";
+$query = "INSERT INTO usuarios (nome, email, senha, telefone) VALUES ('{$nome}', '{$email}', '{$senha}', '{$telefone}')";
 
 $conexao = mysqli_connect('localhost', 'root', '', 'atividadedois');
 
