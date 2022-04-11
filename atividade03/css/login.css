@@ -1,0 +1,21 @@
+.login-caixas {
+    justify-content: center;
+    border-radius: 10px;
+    border: 2px;
+    border-color: rgb(209, 209, 209);
+    border-style: solid;
+}
+
+.login-painel {
+    padding: 10vmax 10vmax;
+    text-align: center;
+}
+
+.login-elemento {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.login-centralizado{
+    text-align: center;
+}
