@@ -5,6 +5,8 @@
 .navbar {
     margin: 0;
     padding: 8px 30px;
+    font-size: 35px;
+    background-color: #337AB7;
 }
 
 .navbar ul {
@@ -28,8 +30,114 @@
 
 .navbar-direita {
     float: right;
+    font-size: 15px;
 }
 
 .navbar-direita a:hover {
     color: black;
+}
+
+.sidebar {
+    height: auto;
+    width: 15%;
+    min-width: 200px;
+    display: flex;
+    background-color: #102538;
+    margin: 0;
+}
+
+.sidebar .sidebar-title {
+    padding: 15px 25px;
+    text-align: center;
+    width: 100%;
+    padding-top: 30px;
+}
+
+.sidebar .sidebar-title li {
+    text-align: center;
+    width: 100%;
+}
+
+.sidebar p {
+    color: white;
+    font-size: 15px;
+}
+
+.sidebar ul {
+    height: auto;
+    min-height: 10vw;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar li {
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li a:hover {
+    text-decoration: none;
+    background-color: #7a8fa2;
+}
+
+.sidebar li a {
+    color: white;
+    display: block;
+    padding: 15px 30px;
+    margin: 0px;
+}
+
+.sidebar li a img {
+    width: 60px;
+    padding-right: 10px;
+}
+
+.telaprincipal {
+    display: flex;
+}
+
+.telaprincipal .telaprincipal-direita {
+    width: 100%;
+}
+
+.telaprincipal .telaprincipal-direita .telaprincipal-caixas {
+    display: flex;
+}
+
+.telaprincipal .telaprincipal-direita .telaprincipal-caixas ul {
+    padding: 50px 90px;
+    margin: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+}
+
+.telaprincipal .telaprincipal-direita .telaprincipal-caixas a {
+    color: white;
+    display: block;
+    padding: 20px 20px;
+    font-size: 25px;
+}
+
+.telaprincipal .telaprincipal-direita .telaprincipal-caixas li {
+    list-style: none;
+    border: 2px;
+    border-color: rgb(227, 227, 227);
+    border-style: solid;
+    background-color: #7a8fa2;
+}
+
+.telaprincipal .telaprincipal-direita .telaprincipal-caixas img {
+    width: 80px;
+}
+
+.telaprincipal .telaprincipal-direita .telaprincipal-caixas li:hover {
+    background-color: #102538;
+}
+
+.telaprincipal .telaprincipal-direita .telaprincipal-caixas a:hover {
+    text-decoration: none;
 }
