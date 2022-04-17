@@ -11,7 +11,12 @@ $senha = $_GET["senha"];
 
 if (insereUsuario($conexao, $nome, $telefone, $cpf, $nascimento, $email, $senha)) {
 ?>
-    <a class="alert alert-success">Usuário adicionado com sucesso!</p>
+    <div class="container">
+        <div class="principal">
+            <p class="alert alert-success">Usuário registrado com sucesso!</p>
+            <a href="index.php">Clique aqui para voltar para a tela de login</a>
+        </div>
+    </div>
 <?php
 } else {
     $msg = mysqli_error($conexao);

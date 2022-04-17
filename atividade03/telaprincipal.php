@@ -1,7 +1,7 @@
 <?php include("verificalogin.php");
-include("cabecalho.php"); ?>
-
-<h2><a href="logout.php">Sair</a></h2>
+include("cabecalho.php");
+include("barrahorizontal.php");
+include("barralateral.php"); ?>
 
 <?php include("rodape.php");
 exit; ?>
