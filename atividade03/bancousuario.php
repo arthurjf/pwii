@@ -14,7 +14,9 @@ function conectaUsuario($conexao, $email, $senha)
 {
     $query = "SELECT * FROM usuarios WHERE email = '{$email}' AND senha = '{$senha}'";
 
-    $resultadoDaConsulta = mysqli_query($conexao, $query);
+    $resultado = mysqli_query($conexao, $query);
 
-    return $resultadoDaConsulta;
+    $usuario = mysqli_fetch_assoc($resultado);
+
+    return $usuario;
 }

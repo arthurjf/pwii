@@ -1,13 +1,17 @@
-<?php include("cabecalho.php");
+<?php session_start();
+include("cabecalho.php");
 include("conecta.php");
 include("bancousuario.php");
 
 $email = $_GET["email"];
 $senha = $_GET["senha"];
 
-if (conectaUsuario($conexao, $email, $senha)) {
+if ($usuario = conectaUsuario($conexao, $email, $senha)) {
+    $_SESSION['usuario'] = $usuario;
+
+    header('Location: telaprincipal.php');
+    exit();
 ?>
-    <a class="alert alert-success">Login realizado com sucesso!</p>
 <?php
 } else {
     $msg = mysqli_error($conexao);
