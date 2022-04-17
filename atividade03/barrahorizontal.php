@@ -1,17 +1,14 @@
 <div class="navbar navbar-dark bg-primary">
-    <div class="barrahorizontal">
-        <div class="barrahorizontal-centro">
-            <a>
+    <ul class="navbar">
+        <li><a>
                 <img src="img/escola.png">
                 SGTE
-            </a>
+            </a></li>
+        <div class="navbar-direita">
+            <li><a href="deslogar.php">
+                    <img src="img/logout.png">
+                    Sair da conta
+                </a></li>
         </div>
-        <div class="barrahorizontal-deslogar">
-            Olá, <?= $_SESSION['usuario']['nome'] ?>
-            <a href="deslogar.php" class="menu-deslogar">
-                <img src="img/logout.png">
-                Sair da conta
-            </a>
-        </div>
-    </div>
+    </ul>
 </div>
