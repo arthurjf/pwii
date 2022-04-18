@@ -10,7 +10,7 @@
 
 > CREATE TABLE aluno_escola(id integer AUTO_INCREMENT PRIMARY KEY, id_aluno integer, id_escola integer, FOREIGN KEY (id_aluno) REFERENCES alunos(id), FOREIGN KEY (id_escola) REFERENCES escolas(id));
 
-> CREATE TABLE motoristas (id integer AUTO_INCREMENT PRIMARY KEY, id_usuario integer, FOREIGN KEY (id_usuario) REFERENCES usuarios(id));
+> CREATE TABLE motoristas (id integer AUTO_INCREMENT PRIMARY KEY, id_usuarios integer, FOREIGN KEY (id_usuarios) REFERENCES usuarios(id));
 
 > CREATE TABLE frota (id integer AUTO_INCREMENT PRIMARY KEY, placa VARCHAR(50), modelo VARCHAR(60), cor VARCHAR(50));
 

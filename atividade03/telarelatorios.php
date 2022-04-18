@@ -13,8 +13,11 @@ include("barralateral.php");
             <p class="alert-success">Apagado com sucesso!</p>
         <?php } ?>
 
-        <?php include("relatorioaluno.php"); ?>
-        <?php include("relatoriofrota.php"); ?>
+        <?php include("relatorioaluno.php");
+        include("relatoriofrota.php");
+        include("relatoriomotoristas.php"); 
+        include("relatorioescolas.php");
+        ?>
 
         <?php if ($remover != 'true') {
         ?>
