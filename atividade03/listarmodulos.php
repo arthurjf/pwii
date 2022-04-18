@@ -35,7 +35,7 @@
     </a>
 </li>
 <li>
-    <a href="#">
+    <a href="telarelatorios.php">
         <img src="img/relatorio.png">
         Relatórios
     </a>

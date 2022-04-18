@@ -2,6 +2,10 @@
     padding: 40px 15px;
 }
 
+.expandir {
+    height: auto;
+}
+
 .navbar {
     margin: 0;
     padding: 8px 30px;
@@ -46,6 +50,10 @@
     margin: 0;
 }
 
+.sidebar body {
+    height: 100%;
+}
+
 .sidebar .sidebar-title {
     padding: 15px 30px;
     width: 100%;
@@ -62,8 +70,6 @@
 }
 
 .sidebar ul {
-    height: auto;
-    min-height: 10vw;
     padding: 0;
     width: 100%;
 }
@@ -94,6 +100,7 @@
 
 .telaprincipal {
     display: flex;
+    height: 100%;
 }
 
 .telaprincipal .telaprincipal-direita {
@@ -138,4 +145,16 @@
 
 .telaprincipal .telaprincipal-direita .telaprincipal-caixas a:hover {
     text-decoration: none;
+}
+
+.telaprincipal .telaprincipal-direita .principal .relatorios h1 {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: #102538;
+    color: white;
+}
+
+.telaprincipal .telaprincipal-direita .principal .relatorios h3 {
+    text-align: center;
 }

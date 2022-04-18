@@ -6,5 +6,3 @@
         <?php include("telaloginusuario.php"); ?>
     </div>
 </div>
-
-<?php include("rodape.php");
