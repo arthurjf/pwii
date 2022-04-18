@@ -100,7 +100,7 @@
 
 .telaprincipal {
     display: flex;
-    height: 100%;
+    height: auto;
 }
 
 .telaprincipal .telaprincipal-direita {

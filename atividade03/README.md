@@ -14,4 +14,6 @@
 
 > CREATE TABLE frota (id integer AUTO_INCREMENT PRIMARY KEY, placa VARCHAR(50), modelo VARCHAR(60), cor VARCHAR(50));
 
-> CREATE TABLE servidores (id integer AUTO_INCREMENT PRIMARY KEY, usuarios_id integer, FOREIGN KEY (usuarios_id) REFERENCES usuarios(id));
+> CREATE TABLE servidores (id integer AUTO_INCREMENT PRIMARY KEY, id_usuarios integer, FOREIGN KEY (id_usuarios) REFERENCES usuarios(id));
+
+> CREATE TABLE rotas (id integer AUTO_INCREMENT PRIMARY KEY, rota VARCHAR(255));

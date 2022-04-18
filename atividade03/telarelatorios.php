@@ -17,6 +17,8 @@ include("barralateral.php");
         include("relatoriofrota.php");
         include("relatoriomotoristas.php"); 
         include("relatorioescolas.php");
+        include("relatorioservidores.php");
+        include("relatoriorotas.php");
         ?>
 
         <?php if ($remover != 'true') {
