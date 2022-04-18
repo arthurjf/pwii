@@ -18,3 +18,12 @@ function removeAluno($conexao, $id)
 
     return mysqli_query($conexao, $query);
 }
+
+function insereAluno($conexao, $usuariosid)
+{
+    $query = "INSERT INTO alunos (id_usuarios) VALUES ({$usuariosid})";
+
+    $resultadoDaInsercao = mysqli_query($conexao, $query);
+
+    return $resultadoDaInsercao;
+}

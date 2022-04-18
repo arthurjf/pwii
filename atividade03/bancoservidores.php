@@ -18,3 +18,12 @@ function removeServidor($conexao, $id)
 
     return mysqli_query($conexao, $query);
 }
+
+function insereServidor($conexao, $usuariosid)
+{
+    $query = "INSERT INTO servidores (id_usuarios) VALUES ({$usuariosid})";
+
+    $resultadoDaInsercao = mysqli_query($conexao, $query);
+
+    return $resultadoDaInsercao;
+}

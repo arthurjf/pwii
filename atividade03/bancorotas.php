@@ -18,3 +18,12 @@ function removeRota($conexao, $id)
 
     return mysqli_query($conexao, $query);
 }
+
+function insereRota($conexao, $rota)
+{
+    $query = "INSERT INTO rotas (rota) VALUES ('{$rota}')";
+
+    $resultadoDaInsercao = mysqli_query($conexao, $query);
+
+    return $resultadoDaInsercao;
+}

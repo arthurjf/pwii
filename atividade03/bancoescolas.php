@@ -18,3 +18,12 @@ function removeEscola($conexao, $id)
 
     return mysqli_query($conexao, $query);
 }
+
+function insereEscola($conexao, $nome, $endereco)
+{
+    $query = "INSERT INTO escolas (nome, endereco) VALUES ('{$nome}', ('{$endereco}'))";
+
+    $resultadoDaInsercao = mysqli_query($conexao, $query);
+
+    return $resultadoDaInsercao;
+}

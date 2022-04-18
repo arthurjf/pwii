@@ -18,3 +18,12 @@ function removeMotorista($conexao, $id)
 
     return mysqli_query($conexao, $query);
 }
+
+function insereMotorista($conexao, $usuariosid)
+{
+    $query = "INSERT INTO motoristas (id_usuarios) VALUES ({$usuariosid})";
+
+    $resultadoDaInsercao = mysqli_query($conexao, $query);
+
+    return $resultadoDaInsercao;
+}
