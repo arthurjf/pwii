@@ -8,4 +8,4 @@
 </head>
 
 <body>
-    <div class="expandir">
+    <div class="expandir-vertical">

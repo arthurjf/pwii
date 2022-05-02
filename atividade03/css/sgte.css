@@ -3,7 +3,7 @@
 }
 
 .expandir {
-    height: auto;
+    height: 100%;
 }
 
 .navbar {
@@ -100,7 +100,7 @@
 
 .telaprincipal {
     display: flex;
-    height: auto;
+    height: 100%;
 }
 
 .telaprincipal .telaprincipal-direita {
