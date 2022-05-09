@@ -1,0 +1,9 @@
+# Nome do Banco de Dados
+
+> db_formosanews
+
+### Criação de Tabela(s)
+
+> CREATE TABLE tb_usuarios(id INTEGER AUTO_INCREMENT PRIMARY KEY, nome VARCHAR(100) NOT NULL, senha VARCHAR(100) NOT NULL, email VARCHAR(100) NOT NULL) ENGINE=InnoDB;
+
+> CREATE TABLE tb_noticias(id INTEGER AUTO_INCREMENT PRIMARY KEY, titulo VARCHAR(100) NOT NULL, descricao VARCHAR(100) NOT NULL, url VARCHAR(100) NOT NULL) ENGINE=InnoDB;
