@@ -1,13 +1,12 @@
 <?php
 
-class Conexao extends mysqli{
+class conexao{
 
-protected $host, $user, $pass, $dba, $conn, $sql, $qr, $data, $status, $totalFields; //$error;
+protected $host, $user, $pass, $dba, $conn, $sql, $qr, $data, $status, $totalFields, $error;
 
-public function __construct()
-{
+public function __construct(){
     $this->host = "localhost";
-    $this->user = "user";
+    $this->user = "root";
     $this->pass = "";
     $this->dba = "db_formosanews";
     self::connect();
@@ -15,12 +14,12 @@ public function __construct()
 
 public function connect(){
     $this->conn = @mysqli_connect($this->host, $this->user, $this->pass) 
-    or die("<ins><center>Erro ao acessar o banco de dados: </cebter></ins><br/>".mysqli_error());
+    or die("<ins><center>Erro ao acessar o banco de dados: </center></ins></br>".mysqli_error());
 
     $this->dba = @mysqli_select_db($this->conn, $this->dba)
-    or die("<ins><center>Erro na coexão com o bancco de dados: </center></ins>".mysqli_error());
+    or die("<ins><center>Erro na conexão com o banco de dados: </center></ins>".mysqli_error());
     
-    mysqli_set_charset($this->conn, "utf-8");
+    mysqli_set_charset($this->conn, "utf8");
 
     return $this->conn;
 }
@@ -37,4 +36,4 @@ public  function listQr($qr){
     return $this->data;
 }
 
-}
+} ?>

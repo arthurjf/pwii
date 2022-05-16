@@ -1,20 +1,21 @@
 <?php
-include_once("../classes/conexao.php");
-new Conexao();
 
-$login = $_Post['txtEmail'];
-$senha = $_Post['txtSenha'];
+include_once("../classes/manipuladados.php");
 
-$sql = "SELECT * FROM tb_usuarios WHERE email = '$login' AND senha = '$senha';";
+$manipula = new manipuladados();
 
-$query = mysqli_query($conn, $sql);
+$login = $_POST['txtNome'];
+$senha = $_POST['txtSenha'];
 
-$linhas =  @mysqli_num_rows($query);
+$linhas = $manipula->validarLogin($login, $senha);
 
-if($linhas == 0){
-echo '<script>alert("Email ou senha do Admin não cadastrada ou incorreta")</script>';
-echo "<script>location = 'index.php';</script>";
-}else{
-echo "<script>location = 'secoes/telacadastro.php';</script>";
+if ($linhas == 0) {
+    echo '<script>alert("Nome ou senha do Admin não cadastrada ou incorreta")</script>';
+    echo "<script>location = 'index.php';</script>";
+} else {
+    setcookie("nome_usuario", $login);
+    setcookie("senha_usuario", $senha);
+    header("location: principal.php");
 }
+
 ?>
