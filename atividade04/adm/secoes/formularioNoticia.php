@@ -17,9 +17,9 @@
         <textarea name="txtdescricao" rows="10" cols="40"></textarea> <br><br>
 
         <label>Foto:</label><br><br>
-        <input type="file" name="arquivo"> <br><br>
-        <input type="submit" value="Enviar" class="btn btn-lg btn-primary form-group">
-        <input type="reset" value="Limpar" class="btn btn-lg btn-primary">
+        <input type="file" name="arquivo" class="btn"> <br><br>
+        <input type="submit" value="Enviar" class="btn btn-lg btn-primary">
+        <input type="reset" value="Limpar" class="btn btn-lg btn-outline-danger">
     </form>
 </body>
 

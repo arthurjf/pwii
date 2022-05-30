@@ -26,9 +26,9 @@ $url = $_POST['txtUrl'];
         <textarea name="txtDescricao" rows="10" cols="40"><?= $descricao ?></textarea> <br><br>
 
         <label>Foto:</label><br><br>
-        <input type="file" name="arquivo" value="<?= "../" . $url ?>"> <br><br>
-        <input type="submit" value="Aplicar Alteração" class="btn btn-lg btn-primary form-group">
-        <input type="reset" value="Limpar" class="btn btn-lg btn-primary">
+        <input type="file" name="arquivo" class="btn" value="<?= $url ?>"> <br><br>
+        <input type="submit" value="Aplicar Alteração" class="btn btn-lg btn-primary">
+        <input type="reset" value="Limpar" class="btn btn-lg btn-outline-danger">
     </form>
 </body>
 

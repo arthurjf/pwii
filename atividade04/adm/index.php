@@ -31,7 +31,7 @@
                             <div class="text-center">
                                 <p>
                                     <input type="submit" value="Entrar" class="btn btn-primary">
-                                    <input type="reset" value="Limpar" class="btn btn-secondary">
+                                    <input type="reset" value="Limpar" class="btn btn-outline-danger">
                                 </p>
                             </div>
                         </form>
