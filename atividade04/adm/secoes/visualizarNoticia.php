@@ -17,7 +17,7 @@
     $noticias = $busca->getAllDataTable();
     foreach ($noticias as $dados) {
     ?>
-        <form action="modificarnoticia.php" method="post">
+        <form action="secoes/modificarnoticia.php" method="post" enctype="multipart/form-data">
             <input type="hidden" name="txtId" value="<?= $dados["id"] ?>" />
             <input type="hidden" name="txtTitulo" value="<?= $dados["titulo"] ?>" />
             <input type="hidden" name="txtDescricao" value="<?= $dados["descricao"] ?>" />

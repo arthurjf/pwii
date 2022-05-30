@@ -6,13 +6,13 @@ $descricao = $_POST['txtDescricao'];
 $url = $_POST['txtUrl'];
 $botao = $_POST['botao'];
 
-include_once("../classes/manipuladados.php");
+include_once("../../classes/manipuladados.php");
 
 switch ($botao) {
     case "editar":
         session_start();
         $_SESSION = $_POST;
-        header("location: principal.php?secao=formularioAlterarNoticia");
+        header("location: ../principal.php?secao=formularioAlterarNoticia");
         break;
 
     case "excluir":
@@ -24,12 +24,12 @@ switch ($botao) {
 
         echo '<script> alert("' . $manipula->getStatus() . '");</script>';
 
-        echo "<script> location = 'principal.php';</script>";
+        echo "<script> location = '../principal.php';</script>";
         break;
 
     default:
         echo '<script> alert("Algo de errado não está certo");</script>';
 
-        echo "<script> location = 'principal.php';</script>";
+        echo "<script> location = '../principal.php';</script>";
         break;
 }
