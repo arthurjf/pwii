@@ -31,8 +31,6 @@ include_once("../classes/verurl.php");
     <footer>
         <?php include("../includes/rodape.php"); ?>
     </footer>
-
-    <h>Logado com sucesso!</h>
 </body>
 
 </html>
