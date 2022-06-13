@@ -1,9 +1,109 @@
-figure{
+:root {
+    --cor-fundo: #012810;
+    --cor-bold: #078E43;
+}
+
+p {
+    margin: 0;
+}
+
+figure {
     margin: 0;
     padding: 0;
     border: 0;
 }
 
-.navbar{
-    background-color: green;
+aside {
+    padding-top: 80px;
+}
+
+.navbar,
+footer,
+nav {
+    color: white;
+    background-color: var(--cor-fundo);
+}
+
+button {
+    padding: 5px 15px;
+    color: white;
+    background-color: var(--cor-bold);
+}
+
+.detalhe-banner {
+    position: absolute;
+    z-index: 99;
+    margin-top: -130px;
+}
+
+.detalhe-banner img {
+    width: 100%;
+}
+
+.section-padding {
+    padding: 160px 0px;
+}
+
+section span {
+    color: var(--cor-bold);
+}
+
+.preco {
+    color: var(--cor-bold);
+    font-size: 24px;
+}
+
+.footer-baixo {
+    background-color: #001508;
+    padding: 28px 0;
+}
+
+button {
+    background-color: var(--cor-bold);
+}
+
+.sobre {
+    padding-bottom: 90px;
+}
+
+.footer-endereco,
+.footer-novidades {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.footer-endereco p {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.footer-novidades p {
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.novidades-form,
+.novidades-form p {
+    padding-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.novidades-form .txt-field {
+    padding: 0 15px;
+    margin-bottom: 15px;
+    height: 38px;
+    width: 100%;
+}
+
+.novidades-form .btn-enviar {
+    color: white;
+    background-color: var(--cor-bold);
+    padding: 8px 35px;
+    border-radius: 5px;
+    border-color: var(--cor-bold);
+}
+
+.footer-logo {
+    width: 140px;
+    padding-bottom: 25px;
 }
