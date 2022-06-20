@@ -1,7 +1,7 @@
 # Atividade 5
 - Clone do coopercred https://www.coopercredimplementos.com.br/
 
-## Nome tabela
+## Nome banco de dados
 ```sql
 db_coopercredclone
 ```
