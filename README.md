@@ -2,8 +2,7 @@
 
 ## Utilizando
 
-> Linguagem PHP
-
-> Bootstrap
-
-> XAMPP
+- Linguagem PHP
+- MySQL
+- Bootstrap
+- XAMPP

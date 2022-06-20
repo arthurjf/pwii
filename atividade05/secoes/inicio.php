@@ -1,4 +1,4 @@
-<aside>
+<aside style="padding-top: 80px;">
     <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
         <div class="carousel-inner">
             <div class="carousel-item active">
