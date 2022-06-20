@@ -13,10 +13,6 @@ figure {
     border: 0;
 }
 
-aside {
-    padding-top: 80px;
-}
-
 .navbar,
 footer,
 nav {
@@ -46,7 +42,7 @@ button {
     padding: 160px 0px;
 }
 
-section span {
+.emph {
     color: var(--cor-bold);
 }
 
@@ -99,4 +95,11 @@ section span {
 .footer-logo {
     width: 140px;
     padding-bottom: 25px;
+}
+
+.missao-valores{
+    background-color: var(--cor-fundo);
+    color: white;
+    margin: 90px 0;
+    padding: 120px 0;
 }
