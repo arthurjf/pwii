@@ -13,22 +13,22 @@
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item px-2">
-                    <a class="nav-link active px-3 fw-bold" aria-current="page" href="index.php">Início</a>
+                    <a class="nav-link active px-3 fw-bold" aria-current="page" href="index.php">INÍCIO</a>
                 </li>
                 <li class="nav-item px-2">
-                    <a class="nav-link px-3 fw-bold" href="?secao=quemsomos">Quem Somos</a>
+                    <a class="nav-link px-3 fw-bold" href="?secao=quemsomos">QUEM SOMOS</a>
                 </li>
                 <li class="nav-item px-2">
-                    <a class="nav-link px-3 fw-bold" href="?secao=carretas">Carretas</a>
+                    <a class="nav-link px-3 fw-bold" href="?secao=carretas">CARRETAS</a>
                 </li>
                 <li class="nav-item px-2">
-                    <a class="nav-link px-3 fw-bold" href="?secao=pecas">Peças</a>
+                    <a class="nav-link px-3 fw-bold" href="?secao=pecas">PEÇAS</a>
                 </li>
                 <li class="nav-item px-2">
-                    <a class="nav-link px-3 fw-bold" href="?secao=parceiras">Parceiras</a>
+                    <a class="nav-link px-3 fw-bold" href="?secao=parceiros">PARCEIROS</a>
                 </li>
                 <li class="nav-item px-2">
-                    <a class="nav-link px-3 fw-bold" href="?secao=contato">Contato</a>
+                    <a class="nav-link px-3 fw-bold" href="?secao=contato">CONTATO</a>
                 </li>
             </ul>
         </div>

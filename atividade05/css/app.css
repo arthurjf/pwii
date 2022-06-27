@@ -56,8 +56,25 @@ button {
     padding: 28px 0;
 }
 
+.footer-baixo .login {
+    text-align: right;
+}
+
+.footer-baixo .login a {
+    color: white;
+    padding: 8px 0;
+}
+
+.footer-baixo .login a:hover {
+    color: var(--cor-bold);
+}
+
 .sobre {
     padding-bottom: 90px;
+}
+
+.sobre .titulo {
+    padding: 20px 0;
 }
 
 .footer-endereco,
@@ -92,14 +109,147 @@ button {
     border-color: var(--cor-bold);
 }
 
+.novidades-form .btn-enviar:hover {
+    color: var(--cor-bold);
+    background-color: white;
+    border-color: white;
+}
+
 .footer-logo {
     width: 140px;
     padding-bottom: 25px;
 }
 
-.missao-valores{
+.missao-valores {
     background-color: var(--cor-fundo);
     color: white;
     margin: 90px 0;
     padding: 120px 0;
+}
+
+.parceiro img {
+    width: 11rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.parceiro {
+    padding-top: 150px;
+}
+
+.parceiro .titulo {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.parceiro .card {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.contato {
+    padding: 80px 0;
+}
+
+.contato .painel {
+    background-color: white;
+}
+
+.contato .vamosconversar .enderecounico {
+    padding: 25px 25px;
+}
+
+.contato .vamosconversar .enderecounico div {
+    padding: 15px 0;
+}
+
+.contato .vamosconversar .enderecounico h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.contato .vamosconversar .enderecounico address {
+    padding: 0;
+    margin: 0;
+}
+
+.contato .vamosconversar .enderecounico form input {
+    width: 100%;
+    padding: 4px 0;
+    margin: 12px 0;
+    border: 0;
+    border-bottom: 1px solid #b0b0b0;
+}
+
+.contato .vamosconversar .enderecounico form input[type=button] {
+    color: var(--cor-bold);
+    background-color: white;
+    width: 50%;
+    border-radius: 5px;
+    border-color: var(--cor-bold);
+    border: 2px solid var(--cor-bold);
+}
+
+.contato .vamosconversar .enderecounico form input[type=button]:hover {
+    background-color: var(--cor-bold);
+    color: white;
+}
+
+.pecas {
+    padding: 200px 0;
+}
+
+.pecas .card {
+    text-align: center;
+}
+
+.pecas .titulo {
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+.carretas {
+    padding: 200px 0;
+}
+
+.carretas .card {
+    text-align: center;
+}
+
+.carretas .titulo {
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+.login .painel {
+    border-color: white;
+    border-radius: 25px;
+    background: white;
+    padding: 20px;
+}
+
+.login .painel input {
+    margin: 10px 0;
+    width: 100%;
+}
+
+.login .painel input[type=button] {
+    border-radius: 5px;
+    border-style: solid;
+}
+
+.login .painel .btnlogar {
+    color: white;
+    background-color: var(--cor-bold);
+    border-color: var(--cor-bold);
+}
+
+.login .painel .btncancelar {
+    color: var(--cor-bold);
+    background-color: white;
+    border-color: var(--cor-bold);
+    border-width: 1px;
 }

@@ -37,8 +37,11 @@
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <p class="text-center">Copyright</p>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <p class="text-center">uaiser</p>
+            <div class="col-lg-4 col-md-6 col-sm-12 login">
+                <a href="adm/">
+                    <img src="img/user.png" style="width: 2rem;">
+                    Login Administrador
+                </a>
             </div>
         </div>
     </div>

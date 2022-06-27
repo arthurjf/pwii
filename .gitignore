@@ -1,7 +1,8 @@
-index.php
-favicon.ico
-bitnami.css
-applications.html
+/index.php
+/index.html
+/favicon.ico
+/bitnami.css
+/applications.html
 
 /xampp/*
 /img/*

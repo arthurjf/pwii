@@ -1,6 +1,6 @@
 <div class="row sobre">
     <article class="col-lg-6 col-sm-12">
-        <h2 class="fw-bold">
+        <h2 class="titulo fw-bold">
             Sobre A
             <span class="emph">Coopercred Implementos</span>
         </h2>
