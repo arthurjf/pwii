@@ -279,8 +279,8 @@ button {
     color: white;
 }
 
-.autenticacao .login .painel .btn-logar,
-.autenticacao .registrar .painel .btn-logar {
+.autenticacao .login .painel .btn-submit,
+.autenticacao .registrar .painel .btn-submit {
     background-color: var(--cor-bold);
     border-color: var(--cor-fundo);
 }

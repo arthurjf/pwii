@@ -11,7 +11,7 @@
                 <p><input type="text" name="txtNome" placeholder="Exemplo" required /></p>
                 <p>Senha</p>
                 <p><input type="password" name="txtSenha" required /></p>
-                <p><input class="btn-logar" type="submit" value="Registrar" /></p>
+                <p><input class="btn-submit" type="submit" value="Registrar" /></p>
             </form>
             <p><a href="../index.php"><button class="btn-cancelar">Cancelar</button></a></p>
             <p class="criarconta">Já tem uma conta? <a href="?secao=login">Então logue aqui</a></p>

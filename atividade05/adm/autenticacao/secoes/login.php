@@ -7,7 +7,7 @@
                     </p>
                     <p><input type="text" name="txtNome" placeholder="Nome" required /></p>
                     <p><input type="password" name="txtSenha" placeholder="Senha" required /></p>
-                    <p><input class="btn-logar" type="submit" value="Entrar" /></p>
+                    <p><input class="btn-submit" type="submit" value="Entrar" /></p>
                 </form>
                 <p><a href="../index.php"><button class="btn-cancelar">Cancelar</button></a></p>
                 <p class="criarconta">Ainda não tem conta? <a href="?secao=registrar">Registre aqui</a></p>
