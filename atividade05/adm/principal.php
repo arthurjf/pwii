@@ -1,4 +1,5 @@
 <?php
+include_once("validarcookie.php");
 include_once("classes/verurl.php");
 ?>
 
