@@ -279,6 +279,12 @@ button {
     color: white;
 }
 
+.autenticacao .registrar .painel form input[type=button],
+.autenticacao .registrar .painel form input[type=submit]
+{
+margin-top: 30px;
+}
+
 .autenticacao .login .painel .btn-submit,
 .autenticacao .registrar .painel .btn-submit {
     background-color: var(--cor-bold);
@@ -301,7 +307,8 @@ button {
     color: var(--cor-bold);
 }
 
-.autenticacao .login .painel .criarconta {
+.autenticacao .login .painel .criarconta,
+.autenticacao .registrar .painel .possui-conta {
     text-align: center;
 }
 
