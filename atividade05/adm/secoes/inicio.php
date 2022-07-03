@@ -1,1 +1,1 @@
-<h1>Este é o início</h1>
+<h1>Tela de início</h1>

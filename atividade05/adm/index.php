@@ -3,7 +3,7 @@ include_once("autenticacao/classes/verurl.php");
 ?>
 
 <!DOCTYPE html>
-<html class="h-100 autenticacao">
+<html class="autenticacao">
 
 <head>
     <meta charset='utf-8'>
@@ -16,7 +16,7 @@ include_once("autenticacao/classes/verurl.php");
     <script src='../js/bootstrap.bundle.js'></script>
 </head>
 
-<body class="h-100">
+<body>
     <?php
     $red = new verurl();
     $red->trocarUrl(@$_GET['secao']);

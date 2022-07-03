@@ -304,3 +304,25 @@ button {
 .autenticacao .login .painel .criarconta {
     text-align: center;
 }
+
+#barralateral {
+    min-width: 280px;
+}
+
+#barralateral li {
+    margin: 2px 0;
+}
+
+#barralateral ul .active {
+    color: white;
+    background-color: var(--cor-bold);
+    border: solid;
+    border-color: var(--cor-bold);
+    border-radius: 5px;
+}
+
+#barralateral ul svg {
+    margin-right: 7px;
+    display: inline-block;
+    vertical-align: middle;
+}

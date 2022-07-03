@@ -17,10 +17,17 @@ include_once("classes/verurl.php");
 </head>
 
 <body>
-    <?php
-    $red = new verurl();
-    $red->trocarUrl(@$_GET['secao']);
-    ?>
+    <div class="d-flex flex-column flex-md-row h-100">
+        <?php
+        include_once("includes/menulateral.php");
+        ?>
+        <main class="ps-0 ps-md-5 flex-grow-1">
+            <?php
+            $red = new verurl();
+            $red->trocarUrl(@$_GET['secao']);
+            ?>
+        </main>
+    </div>
 </body>
 
 </html>
