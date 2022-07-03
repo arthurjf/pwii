@@ -40,9 +40,9 @@ CREATE TABLE tb_usuarios(id INTEGER AUTO_INCREMENT PRIMARY KEY, nome VARCHAR(90)
 ## Inserção Padrão
 
 ```sql
-INSERT INTO tb_categoriaprodutos(nome) VALUES("Peças")
+INSERT INTO tb_categoriaprodutos(nome) VALUES("Peças");
 ```
 
 ```sql
-INSERT INTO tb_categoriaprodutos(nome) VALUES("Carretas")
+INSERT INTO tb_categoriaprodutos(nome) VALUES("Carretas");
 ```

@@ -103,6 +103,7 @@ button {
 
 .novidades-form .btn-enviar {
     color: white;
+    border: solid;
     background-color: var(--cor-bold);
     padding: 8px 35px;
     border-radius: 5px;
@@ -224,32 +225,63 @@ button {
     padding-bottom: 50px;
 }
 
-.login .painel {
-    border-color: white;
-    border-radius: 25px;
-    background: white;
-    padding: 20px;
-}
-
-.login .painel input {
-    margin: 10px 0;
-    width: 100%;
-}
-
-.login .painel input[type=button] {
-    border-radius: 5px;
-    border-style: solid;
-}
-
-.login .painel .btnlogar {
+.login body {
+    background-color: var(--cor-fundo);
     color: white;
-    background-color: var(--cor-bold);
-    border-color: var(--cor-bold);
 }
 
-.login .painel .btncancelar {
-    color: var(--cor-bold);
+.login .painel {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.login .painel .titulo {
+    text-align: center;
+    font-weight: bold;
+}
+
+.login .painel .subtitulo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login .painel form input,
+.login .painel button {
+    width: 100%;
+    margin: 10px 0;
+    color: black;
+    background-color: var(--cor-fundo);
+    border: solid;
+    border-color: white;
     background-color: white;
-    border-color: var(--cor-bold);
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.login .painel form input[type=button],
+.login .painel form input[type=submit],
+.login .painel button {
     border-width: 1px;
+    color: white;
+}
+
+.login .painel .btn-logar {
+    background-color: var(--cor-bold);
+    border-color: var(--cor-fundo);
+}
+
+.login .painel .btn-cancelar {
+    background-color: var(--cor-fundo);
+    color: white;
+}
+
+.login .painel form input[type=button]:hover,
+.login .painel form input[type=submit]:hover,
+.login .painel .btn-cancelar:hover {
+    background-color: white;
+    color: var(--cor-bold);
+}
+
+.login .painel .criarconta {
+    text-align: center;
 }
