@@ -52,7 +52,7 @@ class manipuladados extends conexao
         $this->sql = "INSERT INTO $this->table($this->fields) VALUES($this->dados)";
 
         if (self::execSQL($this->sql)) {
-            $this->status = "Cadastrado com Sucesso!!";
+            $this->status = "Cadastrado com Sucesso!";
         } else {
             $this->status = "Erro ao cadastrar" . mysqli_error();
         }

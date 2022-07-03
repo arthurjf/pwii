@@ -8,9 +8,9 @@ $busca->setTable("tb_parceiros");
 $resultado = $busca->getAllDataTable();
 ?>
 
-<section class="parceiro">
-    <h2 class="p-5 text-center fw-bold">Nossos Parceiros</h2>
-    <div class="container">
+<div class="container">
+    <section class="parceiro">
+        <h2 class="p-5 text-center fw-bold">Nossos Parceiros</h2>
         <div class="row justify-content-between">
             <?php foreach ($resultado as $dados) { ?>
                 <article class="col-lg-4 col-md-6 col-sm-12">
@@ -27,5 +27,5 @@ $resultado = $busca->getAllDataTable();
                 </article>
             <?php } ?>
         </div>
-    </div>
+</div>
 </section>

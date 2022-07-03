@@ -3,6 +3,12 @@
     --cor-bold: #078E43;
 }
 
+body,
+html,
+.container {
+    height: 100%;
+}
+
 p {
     margin: 0;
 }
@@ -225,28 +231,33 @@ button {
     padding-bottom: 50px;
 }
 
-.login body {
+.autenticacao body {
     background-color: var(--cor-fundo);
     color: white;
 }
 
-.login .painel {
+.autenticacao .login .painel,
+.autenticacao .registrar .painel {
     margin-top: auto;
     margin-bottom: auto;
 }
 
-.login .painel .titulo {
+.autenticacao .login .painel .titulo,
+.autenticacao .registrar .painel .titulo {
     text-align: center;
     font-weight: bold;
 }
 
-.login .painel .subtitulo {
+.autenticacao .login .painel .subtitulo,
+.autenticacao .registrar .painel .subtitulo {
     text-align: center;
     margin-bottom: 30px;
 }
 
-.login .painel form input,
-.login .painel button {
+.autenticacao .login .painel form input,
+.autenticacao .login .painel button,
+.autenticacao .registrar .painel form input,
+.autenticacao .registrar .painel button {
     width: 100%;
     margin: 10px 0;
     color: black;
@@ -258,30 +269,38 @@ button {
     padding: 5px 10px;
 }
 
-.login .painel form input[type=button],
-.login .painel form input[type=submit],
-.login .painel button {
+.autenticacao .login .painel form input[type=button],
+.autenticacao .login .painel form input[type=submit],
+.autenticacao .login .painel button,
+.autenticacao .registrar .painel form input[type=button],
+.autenticacao .registrar .painel form input[type=submit],
+.autenticacao .registrar .painel button {
     border-width: 1px;
     color: white;
 }
 
-.login .painel .btn-logar {
+.autenticacao .login .painel .btn-logar,
+.autenticacao .registrar .painel .btn-logar {
     background-color: var(--cor-bold);
     border-color: var(--cor-fundo);
 }
 
-.login .painel .btn-cancelar {
+.autenticacao .login .painel .btn-cancelar,
+.autenticacao .registrar .painel .btn-cancelar {
     background-color: var(--cor-fundo);
     color: white;
 }
 
-.login .painel form input[type=button]:hover,
-.login .painel form input[type=submit]:hover,
-.login .painel .btn-cancelar:hover {
+.autenticacao .login .painel form input[type=button]:hover,
+.autenticacao .login .painel form input[type=submit]:hover,
+.autenticacao .login .painel .btn-cancelar:hover,
+.autenticacao .registrar .painel form input[type=button]:hover,
+.autenticacao .registrar .painel form input[type=submit]:hover,
+.autenticacao .registrar .painel .btn-cancelar:hover {
     background-color: white;
     color: var(--cor-bold);
 }
 
-.login .painel .criarconta {
+.autenticacao .login .painel .criarconta {
     text-align: center;
 }
