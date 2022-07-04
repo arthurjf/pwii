@@ -11,7 +11,7 @@ $parceiros = $manipula->getAllDataTable();
 
 <section>
     <h1 class="text-center p-3">Parceiros</h1>
-    <table class="table thead-dark">
+    <table class="table table-hover thead-dark">
         <thead class="table-dark">
             <tr>
                 <th scope="col">ID</th>
