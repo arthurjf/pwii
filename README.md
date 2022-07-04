@@ -2,7 +2,8 @@
 
 ## Utilizando
 
-- Linguagem PHP
+- PHP
+- JavaScript
 - MySQL
 - Bootstrap
 - XAMPP
