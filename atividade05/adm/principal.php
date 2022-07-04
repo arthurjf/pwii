@@ -24,7 +24,7 @@ include_once("classes/verurl.php");
         <?php
         include_once("includes/menulateral.php");
         ?>
-        <main class="ps-0 ps-md-5 flex-grow-1">
+        <main class="pt-3 pt-md-1 ps-1 pe-1 pe-md-5 ps-md-5 flex-grow-1 h-100">
             <?php
             $red = new verurl();
             $red->trocarUrl(@$_GET['secao']);

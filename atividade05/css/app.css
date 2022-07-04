@@ -4,8 +4,7 @@
 }
 
 body,
-html,
-.container {
+html {
     height: 100%;
 }
 
@@ -280,9 +279,8 @@ button {
 }
 
 .autenticacao .registrar .painel form input[type=button],
-.autenticacao .registrar .painel form input[type=submit]
-{
-margin-top: 30px;
+.autenticacao .registrar .painel form input[type=submit] {
+    margin-top: 30px;
 }
 
 .autenticacao .login .painel .btn-submit,

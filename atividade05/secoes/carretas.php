@@ -6,7 +6,7 @@ $busca->setTable("tb_produtos");
 $resultado = $busca->getAllProdutos(1);
 ?>
 
-<section class="container">
+<section class="container h-100">
     <div class="carretas">
         <h3 class="titulo">Carretas</h3>
         <div class="row justify-content-between">

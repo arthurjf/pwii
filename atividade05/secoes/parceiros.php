@@ -8,7 +8,7 @@ $busca->setTable("tb_parceiros");
 $resultado = $busca->getAllDataTable();
 ?>
 
-<div class="container">
+<div class="container h-100">
     <section class="parceiro">
         <h2 class="p-5 text-center fw-bold">Nossos Parceiros</h2>
         <div class="row justify-content-between">
