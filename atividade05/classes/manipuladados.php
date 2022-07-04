@@ -113,3 +113,8 @@ class manipuladados extends conexao
         return $produtos;
     }
 }
+
+function converte($Strings)
+{
+    return iconv("UTF-8", "ISO8859-1", $Strings);
+}

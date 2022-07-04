@@ -1,11 +1,6 @@
 <?php
 include_once("../../classes/manipuladados.php");
 
-function converte($Strings)
-{
-    return iconv("UTF-8", "ISO8859-1", $Strings);
-}
-
 $nome = $_POST['txtNome'];
 $endereco = $_POST['txtEndereco'];
 $telefone = $_POST['txtTelefone'];
@@ -22,4 +17,4 @@ $cadastra->setDados("'$nome','$endereco','$telefone','$urlbanco'");
 $cadastra->insert();
 
 echo '<script> alert("' . $cadastra->getStatus() . '");</script>';
-echo "<script> location = 'principal.php?secao=parceiros';</script>";
+echo "<script> location = '../principal.php?secao=parceiros';</script>";
