@@ -1,6 +1,8 @@
-<section class="container" style="padding-top: 150px;">
-    <?php include_once("includes/sobre.php"); ?>
-</section>
+<div>
+    <section class="container" style="padding-top: 150px;">
+        <?php include_once("includes/sobre.php"); ?>
+    </section>
+</div>
 <div class="missao-valores">
     <section class="container">
         <div class="row">

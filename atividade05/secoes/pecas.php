@@ -7,8 +7,8 @@ $busca->setTable("tb_produtos");
 $resultado = $busca->getAllProdutos(1);
 ?>
 
-<section class="pecas">
-    <div class="container">
+<section class="container">
+    <div class="pecas">
         <h3 class="titulo">Peças</h3>
         <div class="row justify-content-between">
             <?php foreach ($resultado as $dados) { ?>

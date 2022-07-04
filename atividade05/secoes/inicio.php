@@ -61,6 +61,8 @@
         </div>
     </div>
 </section>
-<section class="container">
-    <?php include_once("includes/sobre.php"); ?>
-</section>
+<div>
+    <section class="container">
+        <?php include_once("includes/sobre.php"); ?>
+    </section>
+</div>
