@@ -13,7 +13,7 @@
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item px-2">
-                    <a class="nav-link active px-3 fw-bold" aria-current="page" href="index.php">INÍCIO</a>
+                    <a class="nav-link px-3 fw-bold" href="index.php" id="nav-inicio">INÍCIO</a>
                 </li>
                 <li class="nav-item px-2">
                     <a class="nav-link px-3 fw-bold" href="?secao=quemsomos">QUEM SOMOS</a>

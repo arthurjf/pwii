@@ -318,14 +318,26 @@ margin-top: 30px;
 
 #barralateral li {
     margin: 2px 0;
+    border: solid;
+    border-color: var(--cor-fundo);
+    border-radius: 5px;
 }
 
-#barralateral ul .active {
+#barralateral li:active,
+#barralateral li .active {
     color: white;
-    background-color: var(--cor-bold);
-    border: solid;
-    border-color: var(--cor-bold);
     border-radius: 5px;
+    background-color: var(--cor-bold);
+    border-color: var(--cor-bold);
+}
+
+#barralateral li:hover {
+    background-color: white;
+    border-color: white;
+}
+
+#barralateral li:hover a:not(.active) {
+    color: var(--cor-bold);
 }
 
 #barralateral ul svg {

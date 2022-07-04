@@ -14,6 +14,8 @@ include_once("classes/verurl.php");
     <link rel='stylesheet' type='text/css' media='screen' href='css/app.css'>
     <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
     <script src='js/bootstrap.bundle.js'></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src='js/navbarselect.js'></script>
 </head>
 
 <body>
