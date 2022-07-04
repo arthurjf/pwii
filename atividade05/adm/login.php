@@ -1,5 +1,4 @@
 <?php
-
 include_once("../classes/manipuladados.php");
 
 $manipula = new manipuladados();
