@@ -3,7 +3,6 @@ include_once("classes/manipuladados.php");
 include_once("classes/util.php");
 
 $busca = new manipuladados();
-$busca->setTable("tb_produtos");
 $busca->setTable("tb_parceiros");
 $resultado = $busca->getAllDataTable();
 ?>

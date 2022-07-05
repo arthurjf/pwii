@@ -1,15 +1,33 @@
+<?php
+include_once("classes/manipuladados.php");
+
+$busca = new manipuladados();
+$busca->setTable("tb_banners");
+$banners = $busca->getAllDataTable();
+?>
+
 <aside style="padding-top: 80px;">
     <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="img/banner_1.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="img/banner_2.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="img/banner_3.png" class="d-block w-100" alt="...">
-            </div>
+            <?php
+            if (sizeof($banners) <= 0) { ?>
+                <div class="carousel-item active">
+                    <img src="imgbanners/banner_2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <?php } else {
+                $primeiro = $banners[0];
+                foreach ($banners as $banner) {
+                    if ($primeiro == $banner) { ?>
+                        <div class="carousel-item active">
+                            <img src="<?= $banner["url"] ?>" class="d-block w-100" alt="...">
+                        </div>
+                    <?php } else { ?>
+                        <div class="carousel-item">
+                            <img src="<?= $banner["url"] ?>" class="d-block w-100" alt="...">
+                        </div>
+            <?php }
+                }
+            } ?>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -31,8 +49,6 @@
                 <span>Produtos</span>
             </h1>
             <h3>Carretas</h3>
-            <h3>Peças</h3>
-            <!--<button>ESTOQUE COMPLETO</button>-->
             <article class="col-lg-4 col-md-6 col-sm-12">
                 <div class="card border-0" style="width: 22rem;">
                     <img class="card-img-top" src="img/card.jpg" alt="Card image cap">
