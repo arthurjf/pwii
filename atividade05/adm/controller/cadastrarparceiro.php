@@ -18,3 +18,4 @@ $cadastra->insert();
 
 echo '<script> alert("' . $cadastra->getStatus() . '");</script>';
 echo "<script> location = '../principal.php?secao=parceiros';</script>";
+exit();

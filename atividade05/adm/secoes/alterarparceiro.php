@@ -14,7 +14,7 @@ $url = $_POST['txtUrl'];
         <input type="hidden" name="txtId" value="<?= $id ?>" />
         <div class="form-group mb-3">
             <label>Nome</label>
-            <input type="name" class="form-control" placeholder="Digite o nome do parceiro" name="txtNome" value="<?= $nome ?>" required />
+            <input type="name" class="form-control" placeholder="Digite o nome do parceiro" name="txtNome" value="<?= $nome ?>" />
         </div>
         <div class="form-group mb-3">
             <label>Endereço</label>
