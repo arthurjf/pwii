@@ -33,6 +33,11 @@ CREATE TABLE tb_produtos_categoriaprodutos (id INTEGER AUTO_INCREMENT PRIMARY KE
 CREATE TABLE tb_usuarios(id INTEGER AUTO_INCREMENT PRIMARY KEY, nome VARCHAR(90) NOT NULL, email VARCHAR(90) NOT NULL, senha VARCHAR(90) NOT NULL);
 ```
 
+### Tabela banner
+```sql
+CREATE TABLE tb_banners(id INTEGER AUTO_INCREMENT PRIMARY KEY, url VARCHAR(150) NOT NULL);
+```
+
 ## Inserção Padrão
 
 ```sql

@@ -1,4 +1,5 @@
 <?php
+session_start();
 include_once("validarcookie.php");
 include_once("classes/verurl.php");
 ?>
@@ -22,7 +23,7 @@ include_once("classes/verurl.php");
 <body>
     <div class="d-flex flex-column flex-md-row h-100">
         <?php
-        include_once("includes/menulateral.php");
+        require_once("includes/menulateral.php");
         ?>
         <main class="pt-3 pt-md-1 ps-1 pe-1 pe-md-5 ps-md-5 flex-grow-1 h-100">
             <?php

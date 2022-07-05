@@ -4,7 +4,7 @@ include_once("../classes/manipuladados.php");
 
 <section>
     <h1 class="text-center p-3">Adicionar Parceiro</h1>
-    <form action="secoes/cadastrarparceiro.php" method="post" enctype="multipart/form-data">
+    <form action="controller/cadastrarparceiro.php" method="post" enctype="multipart/form-data">
         <div class="form-group mb-3">
             <label>Nome</label>
             <input type="name" class="form-control" placeholder="Digite o nome do parceiro" name="txtNome" required />
