@@ -4,7 +4,7 @@ include_once("../classes/manipuladados.php");
 
 <section>
     <h1 class="pt-3 pb-3">Adicionar Parceiro</h1>
-    <form action="controller/cadastrarparceiro.php" method="post" enctype="multipart/form-data">
+    <form action="controller/modificaparceiro.php" method="post" enctype="multipart/form-data">
         <div class="form-group mb-3">
             <label>Nome</label>
             <input type="name" class="form-control" placeholder="Digite o nome do parceiro" name="txtNome" />
@@ -21,6 +21,6 @@ include_once("../classes/manipuladados.php");
             <label>Logo do Parceiro</label>
             <input type="file" class="form-control-file" name="arquivo" />
         </div>
-        <button type="submit" class="btn btn-primary">Cadastrar Parceiro</button>
+        <button type="submit" name="botao" value="insert" class="btn btn-primary">Cadastrar Parceiro</button>
     </form>
 </section>

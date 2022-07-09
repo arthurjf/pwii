@@ -10,7 +10,7 @@ $url = $_POST['txtUrl'];
 
 <section>
     <h1 class="text-center p-3">Alterar Parceiro</h1>
-    <form action="controller/alterarparceiro.php" method="post" enctype="multipart/form-data">
+    <form action="controller/modificaparceiro.php" method="post" enctype="multipart/form-data">
         <input type="hidden" name="txtId" value="<?= $id ?>" />
         <div class="form-group mb-3">
             <label>Nome</label>
@@ -28,7 +28,7 @@ $url = $_POST['txtUrl'];
             <label>Logo do Parceiro</label>
             <input type="file" class="form-control-file" name="arquivo" value="<?= $url ?>" />
         </div>
-        <button type="submit" name="botao" value="editar" class="btn btn-primary">Alterar Parceiro</button>
-        <button type="submit" name="botao" value="deletar" class="btn btn-outline-danger">Deletar Parceiro</button>
+        <button type="submit" name="botao" value="update" class="btn btn-primary">Alterar Parceiro</button>
+        <button type="submit" name="botao" value="delete" class="btn btn-outline-danger">Deletar Parceiro</button>
     </form>
 </section>

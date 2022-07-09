@@ -5,6 +5,6 @@
             <label>Banner para ser mostrao na home: </label>
             <input type="file" class="form-control-file" name="arquivo" />
         </div>
-        <button type="submit" name="botao" value="insert" class="btn btn-primary">Cadastrar Parceiro</button>
+        <button type="submit" name="botao" value="insert" class="btn btn-primary">Cadastrar Banner</button>
     </form>
 </section>
