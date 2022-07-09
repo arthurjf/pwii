@@ -49,31 +49,23 @@ $banners = $busca->getAllDataTable();
                 <span>Produtos</span>
             </h1>
             <h3>Carretas</h3>
-            <article class="col-lg-4 col-md-6 col-sm-12">
-                <div class="card border-0" style="width: 22rem;">
-                    <img class="card-img-top" src="img/card.jpg" alt="Card image cap">
-                    <div class="card-body fw-bold">
-                        <h5 class="card-title fw-bold">Baú Facchini 30 Paletes 2022 *Pronta Entrega*</h5>
-                        <p class="card-text preco fw-bold">R$169.000,00</p>
+            <?php
+            $busca = new manipuladados();
+            $busca->setTable("tb_produtos");
+            $carretas = $busca->getAllProdutosFromCategory(2);
+
+            foreach ($carretas as $carreta) {
+            ?>
+                <article class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card border-0" style="width: 22rem;">
+                        <img class="card-img-top" src="<?=$carreta["url"]?>" alt="Card image cap">
+                        <div class="card-body fw-bold">
+                            <h5 class="card-title fw-bold"><?= $carreta["nome"] ?></h5>
+                            <p class="card-text preco fw-bold">R$ <?= $carreta["preco"] ?></p>
+                        </div>
                     </div>
-                </div>
-            </article>
-            <article class="col-lg-4 col-md-6 col-sm-12 col-md-auto">
-                <div class="card border-0" style="width: 22rem;">
-                    <img class="card-img-top" src="img/card.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold">Baú Facchini 30 Paletes 2022 *Pronta Entrega*</h5>
-                        <p class="card-text preco fw-bold">R$169.000,00</p>
-                    </div>
-            </article>
-            <article class="col-lg-4 col-md-6 col-sm-12 col-md-auto">
-                <div class="card border-0" style="width: 22rem;">
-                    <img class="card-img-top" src="img/card.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold">Baú Facchini 30 Paletes 2022 *Pronta Entrega*</h5>
-                        <p class="card-text preco fw-bold">R$169.000,00</p>
-                    </div>
-            </article>
+                </article>
+            <?php } ?>
         </div>
     </div>
 </section>

@@ -1,7 +1,3 @@
-<?php
-include_once("../classes/manipuladados.php");
-?>
-
 <section>
     <h1 class="pt-3 pb-3">Adicionar Parceiro</h1>
     <form action="controller/modificaparceiro.php" method="post" enctype="multipart/form-data">

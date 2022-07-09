@@ -3,7 +3,7 @@ include_once("classes/manipuladados.php");
 
 $busca = new manipuladados();
 $busca->setTable("tb_produtos");
-$resultado = $busca->getAllProdutos(2);
+$resultado = $busca->getAllProdutosFromCategory(1);
 ?>
 
 <section class="container h-100">
@@ -16,7 +16,7 @@ $resultado = $busca->getAllProdutos(2);
                         <img class="card-img-top" src="<?= $dados["url"] ?>" alt="Produto">
                         <div class="card-body fw-bold">
                             <h5 class="card-title fw-bold"><?= $dados["nome"]; ?></h5>
-                            <p class="card-text preco fw-bold">R$<?= $dados["preco"]; ?></p>
+                            <p class="card-text preco fw-bold">R$ <?= $dados["preco"]; ?></p>
                         </div>
                     </div>
                 </article>

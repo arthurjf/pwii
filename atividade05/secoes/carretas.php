@@ -3,20 +3,20 @@ include_once("classes/manipuladados.php");
 
 $busca = new manipuladados();
 $busca->setTable("tb_produtos");
-$resultado = $busca->getAllProdutos(1);
+$carretas = $busca->getAllProdutosFromCategory(2);
 ?>
 
 <section class="container h-100">
     <div class="carretas">
         <h3 class="titulo">Carretas</h3>
         <div class="row justify-content-between">
-            <?php foreach ($resultado as $dados) { ?>
+            <?php foreach ($carretas as $carreta) { ?>
                 <article class="col-lg-4 col-md-6 col-sm-12">
                     <div class="card border-0" style="width: 22rem;">
-                        <img class="card-img-top" src="<?= $dados["url"] ?>" alt="Produto">
+                        <img class="card-img-top" src="<?= $carreta["url"] ?>" alt="Produto">
                         <div class="card-body fw-bold">
-                            <h5 class="card-title fw-bold"><?= $dados["nome"]; ?></h5>
-                            <p class="card-text preco fw-bold">R$<?= $dados["preco"]; ?></p>
+                            <h5 class="card-title fw-bold"><?= $carreta["nome"]; ?></h5>
+                            <p class="card-text preco fw-bold">R$ <?= $carreta["preco"]; ?></p>
                         </div>
                     </div>
                 </article>

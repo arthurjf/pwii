@@ -93,15 +93,32 @@ class manipuladados extends conexao
         return $produtos;
     }
 
-    public function getAllProdutos($categoriaId)
+    public function getAllProdutos()
     {
-        $this->sql = "SELECT tb_produtos.nome, tb_produtos.descricao, tb_produtos.preco, tb_produtos.url 
-        FROM $this->table 
-        INNER JOIN tb_produtos_categoriaprodutos 
-        ON tb_produtos.id = tb_produtos_categoriaprodutos.id_produtos 
+        $this->sql = "SELECT tb_produtos.*,
+        tb_categoriaprodutos.nome AS categoria_nome
+        FROM $this->table
+        INNER JOIN tb_categoriaprodutos
+        ON tb_produtos.id_categorias = tb_categoriaprodutos.id;";
+
+        $this->qr  = self::execSQL($this->sql);
+        $produtos = array();
+
+        while ($row = @mysqli_fetch_assoc($this->qr)) {
+            array_push($produtos, $row);
+        }
+
+        return $produtos;
+    }
+
+    public function getAllProdutosFromCategory($categoriaId)
+    {
+        $this->sql = "SELECT tb_produtos.*,
+        tb_categoriaprodutos.nome AS categoria_nome
+        FROM $this->table
         INNER JOIN tb_categoriaprodutos 
-        ON tb_categoriaprodutos.id = tb_produtos_categoriaprodutos.id_categoriaprodutos 
-        WHERE tb_produtos_categoriaprodutos.id_categoriaprodutos = $categoriaId";
+        ON tb_produtos.id_categorias = tb_categoriaprodutos.id
+        WHERE tb_categoriaprodutos.id = $categoriaId";
 
         $this->qr  = self::execSQL($this->sql);
         $produtos = array();
