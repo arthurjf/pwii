@@ -93,6 +93,20 @@ class manipuladados extends conexao
         return $produtos;
     }
 
+    
+    public function getAllDataTableElements($elements)
+    {
+        $this->sql = "SELECT $elements FROM $this->table";
+        $this->qr  = self::execSQL($this->sql);
+        $produtos = array();
+
+        while ($row = @mysqli_fetch_assoc($this->qr)) {
+            array_push($produtos, $row);
+        }
+
+        return $produtos;
+    }
+
     public function getAllProdutos()
     {
         $this->sql = "SELECT tb_produtos.*,
